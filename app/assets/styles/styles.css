@@ -1,0 +1,12 @@
+$mainblue: #e7aaa7;
+div{
+  a{
+  color: $mainblue;
+  columns: 200px;
+  }
+
+  p{
+    color:$mainblue;
+  }
+  
+}

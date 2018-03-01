@@ -1,0 +1,8 @@
+div a{
+  color: #e7aaa7;
+  -webkit-columns: 200px;
+          columns: 200px;
+  }
+  div p{
+    color:#e7aaa7;
+  }

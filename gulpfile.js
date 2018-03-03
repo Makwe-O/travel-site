@@ -5,14 +5,15 @@ const autoprefixer = require('autoprefixer');
 const cssvars = require('postcss-simple-vars');
 const nested = require('postcss-nested');
 const atImport = require('postcss-import');
+const browserSync = require('browser-sync');
 
 gulp.task('default', () =>{
   console.log("You created your first task!");
 });
 
 gulp.task('html', () =>{
-  console.log("Hello")
-})
+  console.log("Hello");
+}); 
 
 gulp.task('styles', () =>{
     return gulp.src('./app/assets/styles/styles.css')

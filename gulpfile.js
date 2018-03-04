@@ -11,22 +11,31 @@ gulp.task('default', () =>{
   console.log("You created your first task!");
 });
 
-gulp.task('html', () =>{
-  console.log("Hello");
-}); 
-
 gulp.task('styles', () =>{
     return gulp.src('./app/assets/styles/styles.css')
     .pipe(postcss([atImport(),  autoprefixer(), cssvars(), nested()]))
     .pipe(gulp.dest('./app/temp/styles'));
 });
 
+
 gulp.task('watch', () =>{
+
+  browserSync.init({
+    notify:false,
+    server: {
+      baseDir: "app"
+    }
+  });
   watch('./app/index.html', () =>{
-    gulp.start('html');
+    browserSync.reload();
   });
   watch('./app/assets/styles/**/*.css', () =>{
-    gulp.start('styles');
+    gulp.start('cssInject');
   });
 
+});
+
+gulp.task('cssInject', ['styles'], () =>{
+  return gulp.src('./app/temp/styles.css')
+  .pipe(browserSync.stream());
 });

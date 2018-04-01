@@ -1,7 +1,7 @@
 .wrapper{
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 1200px;
+  max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
   &--medium{
@@ -11,5 +11,11 @@
     padding-left: 0px;
     padding-right: 0px;
 
+  }
+  &--b-margin{
+      margin-bottom: 1rem;
+    @mixin at-Small{
+    margin-bottom: 3.875rem;
+  }
   }
 }

@@ -16,7 +16,11 @@
     font-size: 1.6rem;
     font-weight: 300;
     margin-bottom: 0.8rem;
+<<<<<<< HEAD
     text-align: cen;
+=======
+    text-align: center;
+>>>>>>> our-features
 
     @mixin at-Small{
       font-size: 1.875rem;

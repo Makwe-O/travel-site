@@ -6,6 +6,10 @@
   @mixin at-Small{
     font-size: 3.75rem;
   }
+<<<<<<< HEAD
+=======
+  
+>>>>>>> our-features
   strong{
     font-weight: 500;
   }

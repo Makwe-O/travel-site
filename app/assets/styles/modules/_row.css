@@ -37,6 +37,9 @@
     &--gutter-large{
       margin-right:-100px;
     }
+    &----gutter-small{
+      margin-right:-45px;
+    }
 
     &--gutter > div{
 
@@ -46,5 +49,21 @@
     &--gutter-large > div{
         padding-right:100px;
     }
+    &--gutter-small > div{
+      padding-right:45px;
+    }
+    &--t-padding{
+      padding-top: 80px;
+    }
 
+/*Begin Equal height rules*/
+  &--equal-height-at-medium{
+    @mixin at-Medium{
+      display:flex;
+    }
+    & > div{
+      float: none;
+      display: flex;
+    }
+  }
 }

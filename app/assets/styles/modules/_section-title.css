@@ -6,10 +6,7 @@
   @mixin at-Small{
     font-size: 3.75rem;
   }
-<<<<<<< HEAD
-=======
-  
->>>>>>> our-features
+
   strong{
     font-weight: 500;
   }
@@ -20,10 +17,15 @@
     margin-bottom: 0.6rem;
 
     @mixin at-Small{
+    position: relative;
+    top:10px;
       margin-right:0.5rem;
       margin-left: 0;
       margin-bottom: 0;
       display: inline-block;
     }
+  }
+  &--blue{
+    color:$mainBlue;
   }
 }

@@ -347,6 +347,7 @@ template {
 
 body{
   font-family: 'Roboto', sans-serif;
+  
 }
 
 img{
@@ -483,12 +484,14 @@ a{
 
 .page-section{
   padding: 1rem 0;
+
 }
 
 @media (min-width: 800px){
 
 .page-section{
   padding:4.5rem 0
+
 }
    }
 
@@ -496,6 +499,18 @@ a{
     background-color: #2f5572;
     color:#fff;
   }
+
+.page-section--testimonials{
+    background-color: #e0e6ef;
+  }
+
+@media (min-width: 800px){
+
+.page-section--testimonials{
+      background: url(http://res.cloudinary.com/dnavbc7ny/image/upload/v1522886690/testimonials-bg_ghxiu9.jpg) top center no-repeat;
+      background-size: cover
+  }
+   }
 
 .headline{
 
@@ -561,14 +576,12 @@ a{
 .row{
     display: flex;
         flex-direction: column;
-
 }
 
 @media (min-width: 800px){
 
 .row{
           flex-direction: row
-
 }
    }
 
@@ -607,6 +620,10 @@ a{
       margin-right:-100px;
     }
 
+.row----gutter-small{
+      margin-right:-45px;
+    }
+
 .row--gutter > div{
 
       padding-right: 65px;
@@ -614,6 +631,28 @@ a{
 
 .row--gutter-large > div{
         padding-right:100px;
+    }
+
+.row--gutter-small > div{
+      padding-right:45px;
+    }
+
+.row--t-padding{
+      padding-top: 80px;
+    }
+
+/*Begin Equal height rules*/
+
+@media (min-width: 800px){
+
+.row--equal-height-at-medium{
+      display:flex
+  }
+   }
+
+.row--equal-height-at-medium > div{
+      float: none;
+      display: flex;
     }
 
 .generic-content-container p{
@@ -646,11 +685,7 @@ a{
 }
    }
 
-.section-title <<<<<<< HEAD
-=======
-  
->>>>>>> our-features
-  strong{
+.section-title strong{
     font-weight: 500;
   }
 
@@ -664,12 +699,18 @@ a{
 @media (min-width: 530px){
 
 .section-title__icon{
+    position: relative;
+    top:10px;
       margin-right:0.5rem;
       margin-left: 0;
       margin-bottom: 0;
       display: inline-block
   }
    }
+
+.section-title--blue{
+    color:#2f5572;
+  }
 
 .feature-item{
   position: relative;
@@ -702,15 +743,46 @@ a{
     font-size: 1.6rem;
     font-weight: 300;
     margin-bottom: 0.8rem;
-<<<<<<< HEAD
-    text-align: cen;
-=======
+    text-align: center;
     text-align: center;
   }
 
-.feature-item__title >>>>>>> our-features
+@media (min-width: 530px){
 
-    @mixin at-Small{
+.feature-item__title{
       font-size: 1.875rem;
-      text-align: left;
-    }
+      text-align: left
+  }
+   }
+
+.testimonial{
+  background-color: rgba(255, 255, 255, 0.7) ;
+  padding: 0 1.8125rem 1px 1.8125rem;
+}
+
+.testimonial__photo{
+    border: 6px solid rgba(255, 255, 255, 0.7);
+    border-radius: 80px;
+    overflow: hidden;
+    width:160px;
+    height:160px;
+    margin: 0 auto -80px auto;
+    position: relative;
+    top: -80px;
+  }
+
+.testimonial__title{
+    color: #2f5572;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+.testimonial__subtitle{
+    color: #d59541;
+    text-align: center;
+    font-weight: 400;
+    font-size:0.9375rem;
+    margin:0.25rem 0 1rem 0; 
+  }

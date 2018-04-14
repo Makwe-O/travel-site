@@ -791,6 +791,17 @@ a{
 }
    }
 
+.testimonial--medium{
+    margin-right:20px;
+  }
+
+@media (min-width: 800px){
+
+.testimonial--medium{
+      margin-right:0
+  }
+   }
+
 .testimonial--last{
     margin-bottom: 0;
   }

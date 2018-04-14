@@ -465,6 +465,19 @@ a{
     max-width: 976px;
   }
 
+.wrapper--no-p-until-medium{
+    padding-left:0;
+    padding-right: 0;
+  }
+
+@media (min-width: 530px){
+
+.wrapper--no-p-until-medium{
+        padding-left: 20px;
+        padding-right: 20px
+  }
+   }
+
 .wrapper .wrapper{
     padding-left: 0px;
     padding-right: 0px;
@@ -483,21 +496,19 @@ a{
    }
 
 .page-section{
-  padding: 1rem 0;
-
+  padding: 1.2rem 0;
 }
 
 @media (min-width: 800px){
 
 .page-section{
-  padding:4.5rem 0
-
+    padding: 4.5rem 0
 }
    }
 
 .page-section--blue{
-    background-color: #2f5572;
-    color:#fff;
+  background-color:#2f5572;
+  color:#ffffff;
   }
 
 .page-section--testimonials{
@@ -507,8 +518,19 @@ a{
 @media (min-width: 800px){
 
 .page-section--testimonials{
-      background: url(http://res.cloudinary.com/dnavbc7ny/image/upload/v1522886690/testimonials-bg_ghxiu9.jpg) top center no-repeat;
+      background: url() top center no-repeat;
       background-size: cover
+  }
+   }
+
+.page-section--no-b-pading-until-medium{
+    padding-bottom: 0;
+  }
+
+@media (min-width: 800px){
+
+.page-section--no-b-pading-until-medium{
+      padding-bottom:4.5rem
   }
    }
 
@@ -757,8 +779,21 @@ a{
 
 .testimonial{
   background-color: rgba(255, 255, 255, 0.7) ;
-  padding: 0 1.8125rem 1px 1.8125rem;
+    padding: 0 18px 1px 18px;
+    margin-bottom:98px;
 }
+
+@media (min-width: 800px){
+
+.testimonial{
+  padding: 0 1.8125rem 1px 1.8125rem;
+  margin-bottom: 0
+}
+   }
+
+.testimonial--last{
+    margin-bottom: 0;
+  }
 
 .testimonial__photo{
     border: 6px solid rgba(255, 255, 255, 0.7);
@@ -784,5 +819,5 @@ a{
     text-align: center;
     font-weight: 400;
     font-size:0.9375rem;
-    margin:0.25rem 0 1rem 0; 
+    margin:0.25rem 0 1rem 0;
   }

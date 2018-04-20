@@ -518,7 +518,7 @@ a{
 @media (min-width: 800px){
 
 .page-section--testimonials{
-      background: url() top center no-repeat;
+      background: url('http://res.cloudinary.com/dnavbc7ny/image/upload/v1522886690/testimonials-bg_ghxiu9.jpg') top center no-repeat;
       background-size: cover
   }
    }
